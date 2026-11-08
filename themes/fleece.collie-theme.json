@@ -106,7 +106,7 @@
     "density": "roomy",
     "weight": "default",
     "border": "default",
-    "ground": "grain",
+    "ground": { "pattern": "weave", "ink": "foreground" },
     "chrome": "page",
     "rows": "cards",
     "icons": "thin",
