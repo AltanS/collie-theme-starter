@@ -35,10 +35,10 @@ The key takes one of these words. Collie may add more later.
 
 | Word | Character |
 | --- | --- |
-| `collie` | Collie, the black and white dog. The default. |
-| `kawaii` | Kawaii, a round puppy with big eyes, face on. |
+| `collie` | Collie, the collie head in profile, in the ink of the page. The default. |
+| `kawaii` | Kawaii, a round puppy face from the front, with big glossy eyes and candy pearls. |
 | `kawaii-tilt` | Kawaii Tilt, the same puppy with its head tilted. |
-| `pixel` | Pixel, an 8-bit dog drawn in square cells. |
+| `pixel` | Pixel, an 8-bit collie head with square beads that hop. |
 
 - A file that sets `character` says `"version": 4`. Leave the key out and the header shows Collie.
 - A version 4 file needs a Collie newer than 1.28.0. An older Collie refuses the file and names the version.
