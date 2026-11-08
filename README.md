@@ -47,7 +47,7 @@ The key takes one of these words. Collie may add more later.
 | `owl` | Owl, the owl that watches through the night, from the front, with huge amber eyes. |
 
 - A file that sets `character` says `"version": 4`. Leave the key out and the header shows Collie.
-- A version 4 file needs a Collie newer than 1.28.0. An older Collie refuses the whole file. To reach older Collies too, leave `character` out and say version 3.
+- A version 4 file needs a Collie that knows characters. An older Collie refuses the whole file. To reach older Collies too, leave `character` out and say version 3.
 - Each phone can pick its own character in **Settings → Appearance → Character**. That choice wins over the theme, unless it is **From the theme**.
 - The app icon and the splash stay Collie under every theme.
 
