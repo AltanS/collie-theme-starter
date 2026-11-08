@@ -48,12 +48,11 @@ The key takes one of these words. Collie may add more later.
 
 - A file that sets `character` says `"version": 4`. Leave the key out and the header shows Collie.
 - A version 4 file needs a Collie that knows characters. An older Collie refuses the whole file. To reach older Collies too, leave `character` out and say version 3.
-- Each phone can pick its own character in **Settings → Appearance → Character**. That choice wins over the theme, unless it is **From the theme**.
 - The app icon and the splash stay Collie under every theme.
 
 ## Try it in Collie
 
-1. Open **Settings**, then **Appearance**. The **Theme** card is under the **Character** card.
+1. Open **Settings**, then **Appearance**. The **Theme** card is the first card.
 2. Tap **Import** and choose your file. Or tap **Paste**, paste the text of the file, and tap **Read**.
 3. Read the preview. It shows both halves, the shape, the terminal colours and a contrast report.
 4. Tap **Try** to wear the theme for a while, or **Apply** to keep it.
