@@ -41,7 +41,7 @@ The key takes one of these words. Collie may add more later.
 | `pixel` | Pixel, an 8-bit collie head with square beads that hop. |
 
 - A file that sets `character` says `"version": 4`. Leave the key out and the header shows Collie.
-- A version 4 file needs a Collie newer than 1.28.0. An older Collie refuses the file and names the version.
+- A version 4 file needs a Collie newer than 1.28.0. An older Collie refuses the whole file. To reach older Collies too, leave `character` out and say version 3.
 - Each phone can pick its own character in **Settings → Appearance → Character**. That choice wins over the theme, unless it is **From the theme**.
 - The app icon and the splash stay the Collie dog under every theme.
 
