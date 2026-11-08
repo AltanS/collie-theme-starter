@@ -1,8 +1,9 @@
 {
-  "version": 3,
+  "version": 4,
   "id": "fleece",
   "name": "Fleece",
   "author": "Altan Sarisin",
+  "character": "sheep",
   "light": {
     "background": "oklch(0.945 0.032 132)",
     "foreground": "oklch(0.28 0.025 120)",
