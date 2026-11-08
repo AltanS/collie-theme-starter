@@ -107,7 +107,7 @@
     "density": "roomy",
     "weight": "default",
     "border": "default",
-    "ground": "gradient",
+    "ground": { "pattern": "dots", "ink": "primary" },
     "chrome": "band",
     "rows": "cards",
     "icons": "default",
