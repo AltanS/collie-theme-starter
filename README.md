@@ -2,9 +2,9 @@
 
 A ready-made theme file for ColliePWA, to copy and change into your own.
 
-The file is `collie-theme.json`. It is a theme called Petal, soft and round, and it wears the Kawaii character. It has a light half and a dark half. It uses every part of a theme file: colours, two typefaces, the shape words, a terminal palette and a character. Edit the parts you want to change and delete the parts you do not.
+The file is `collie-theme.json`. It is a theme called Petal, soft and round, and it wears the Kawaii character and the Phosphor Duotone icons. It has a light half and a dark half. It uses every part of a theme file: colours, two typefaces, the shape words, a terminal palette, a character and an icon set. Edit the parts you want to change and delete the parts you do not.
 
-A second example sits in `themes/`: Fleece, which wears the Sheep character. Keep it, change it, or delete the folder.
+A second example sits in `themes/`: Fleece, which wears the Sheep character and the Iconoir icons. Keep it, change it, or delete the folder.
 
 A theme changes how the app looks and nothing else. It holds colours and a few words. It cannot run code, load a file or reach a server.
 
@@ -12,7 +12,7 @@ A theme changes how the app looks and nothing else. It holds colours and a few w
 
 1. Click **Use this template** on GitHub, or clone this repository.
 2. Open `collie-theme.json`. Change `id`, `name` and `author` first. The `id` must be unique. It uses lower-case letters, digits and hyphens, and it may not be the id of a theme that Collie ships (`collie`, `nightwatch`, `daylight` or `harbour`).
-3. Change the colours in `light` and `dark`. Change the words in `surface`, the typefaces in `fonts`, and the `character`.
+3. Change the colours in `light` and `dark`. Change the words in `surface`, the typefaces in `fonts`, the `character` and the `glyphs`.
 4. Check the file:
 
    ```sh
@@ -49,6 +49,27 @@ The key takes one of these words. Collie may add more later.
 - A file that sets `character` says `"version": 4`. Leave the key out and the header shows Collie.
 - A version 4 file needs a Collie that knows characters. An older Collie refuses the whole file. To reach older Collies too, leave `character` out and say version 3.
 - The app icon and the splash stay Collie under every theme.
+
+## Pick an icon set
+
+The key `glyphs` picks the icons every button and row in the app draws. Petal picks Phosphor Duotone, and Fleece picks Iconoir:
+
+```json
+"glyphs": "phosphor-duotone"
+```
+
+The key takes one of these words.
+
+| Word | Icon set |
+| --- | --- |
+| `lucide` | Lucide, round lines of even width. The default. |
+| `phosphor` | Phosphor, soft and slightly rounder lines. |
+| `phosphor-fill` | Phosphor Fill, the same icons as solid shapes. |
+| `phosphor-duotone` | Phosphor Duotone, the Phosphor lines with a pale fill behind them. |
+| `iconoir` | Iconoir, light, open lines. |
+
+- A file that sets `glyphs` says `"version": 4`, as with `character`. Leave the key out and the app draws Lucide.
+- The agent logos, the character, the status shapes and the app icon stay the same under every set.
 
 ## Try it in Collie
 
