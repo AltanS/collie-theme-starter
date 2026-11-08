@@ -2,7 +2,9 @@
 
 A ready-made theme file for ColliePWA, to copy and change into your own.
 
-The file is `collie-theme.json`. It is a theme called Orchard. It has a light half and a dark half. It uses every part of a theme file: colours, two typefaces, the shape words, a terminal palette and a character. Edit the parts you want to change and delete the parts you do not.
+The file is `collie-theme.json`. It is a theme called Petal, soft and round, and it wears the Kawaii character. It has a light half and a dark half. It uses every part of a theme file: colours, two typefaces, the shape words, a terminal palette and a character. Edit the parts you want to change and delete the parts you do not.
+
+A second example sits in `themes/`: Fleece, which wears the Sheep character. Keep it, change it, or delete the folder.
 
 A theme changes how the app looks and nothing else. It holds colours and a few words. It cannot run code, load a file or reach a server.
 
@@ -14,7 +16,7 @@ A theme changes how the app looks and nothing else. It holds colours and a few w
 4. Check the file:
 
    ```sh
-   collie theme check collie-theme.json
+   collie theme check collie-theme.json themes/*.collie-theme.json
    ```
 
    Exit code 0 means the file passes. Exit code 1 means a rule is broken, and the check prints each cause. A contrast warning means some text is hard to read in one place. Fix it by changing the colour.
@@ -25,7 +27,7 @@ The full reference lists every token, every word and every rule: https://colliep
 
 ## Pick a character
 
-A character is the dog in the header of the app. Its beads circle it, and they turn fast while an agent works. Orchard picks Kawaii:
+A character is the figure in the header of the app. Its beads circle it, and they turn fast while an agent works. Petal picks Kawaii, and Fleece picks Sheep:
 
 ```json
 "character": "kawaii"
@@ -39,11 +41,15 @@ The key takes one of these words. Collie may add more later.
 | `kawaii` | Kawaii, a round puppy face from the front, with big glossy eyes and candy pearls. |
 | `kawaii-tilt` | Kawaii Tilt, the same puppy with its head tilted. |
 | `pixel` | Pixel, an 8-bit collie head with square beads that hop. |
+| `glass` | Glass, a collie head in profile as a leaded stained-glass panel, with jewels in the ring. |
+| `glass-front` | Glass Front, the same stained glass, the head from the front. |
+| `sheep` | Sheep, the sheep the collie herds: a charcoal face in cream wool, in profile. |
+| `owl` | Owl, the owl that watches through the night, from the front, with huge amber eyes. |
 
 - A file that sets `character` says `"version": 4`. Leave the key out and the header shows Collie.
 - A version 4 file needs a Collie newer than 1.28.0. An older Collie refuses the whole file. To reach older Collies too, leave `character` out and say version 3.
 - Each phone can pick its own character in **Settings → Appearance → Character**. That choice wins over the theme, unless it is **From the theme**.
-- The app icon and the splash stay the Collie dog under every theme.
+- The app icon and the splash stay Collie under every theme.
 
 ## Try it in Collie
 
@@ -60,7 +66,7 @@ Collie does not fetch a theme from a link. To use a theme from a link, open it, 
 2. In the **About** box of the repository page, add the topic `colliepwa-theme`.
 3. The site looks for tagged repositories once a day. It checks every theme file with the same check as the app, and it reads the name, the description and this README. A repository that passes shows up on https://colliepwa.dev/themes.
 
-One repository can hold several themes. Put each one in `themes/`, with its id in the name:
+One repository can hold several themes. Put each one in `themes/`, with its id in the name. This repository does both: Petal at the root and Fleece in `themes/`, so the site lists two themes. Delete the one you do not want.
 
 ```text
 themes/
