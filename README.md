@@ -21,6 +21,8 @@ A theme changes how the app looks and nothing else. It holds colours and a few w
 
    Exit code 0 means the file passes. Exit code 1 means a rule is broken, and the check prints each cause. A contrast warning means some text is hard to read in one place. Fix it by changing the colour.
 
+Your coding agent can do these steps for you. Tell it to run `collie theme skill`, then `collie theme check` until the check is clean. See [Let an agent write it](#let-an-agent-write-it).
+
 A token you leave out takes the value of the default theme, so a short file is a good file. Give both halves when you change the page colours.
 
 The full reference lists every token, every word and every rule: https://colliepwa.dev/docs/themes
@@ -100,13 +102,13 @@ Replace this README with a short note about your own theme. Say what it looks li
 
 ## Let an agent write it
 
-Tell your coding agent to run:
+Tell your coding agent, such as Claude Code or Codex, to run this and follow it:
 
 ```sh
-collie theme --skill
+collie theme skill
 ```
 
-It prints the steps and every key a theme file may use. It also tells the agent to run `collie theme check` on the result.
+`collie theme --skill` is the same. It prints the loop and the file format. The agent then runs `collie theme check` on its file and changes the file until the check is clean. This works for a new theme and for a change to this one.
 
 ## Licence
 
