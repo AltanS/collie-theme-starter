@@ -1,0 +1,65 @@
+# Collie theme starter
+
+A ready-made theme file for ColliePWA, to copy and change into your own.
+
+The file is `collie-theme.json`. It is a theme called Orchard. It has a light half and a dark half. It uses every part of a theme file: colours, two typefaces, the shape words, and a terminal palette. Edit the parts you want to change and delete the parts you do not.
+
+A theme changes how the app looks and nothing else. It holds colours and a few words. It cannot run code, load a file or reach a server.
+
+## Make your own
+
+1. Click **Use this template** on GitHub, or clone this repository.
+2. Open `collie-theme.json`. Change `id`, `name` and `author` first. The `id` must be unique. It uses lower-case letters, digits and hyphens, and it may not be the id of a theme that Collie ships (`collie`, `nightwatch`, `daylight` or `harbour`).
+3. Change the colours in `light` and `dark`. Change the words in `surface`, and the typefaces in `fonts`.
+4. Check the file:
+
+   ```sh
+   collie theme check collie-theme.json
+   ```
+
+   Exit code 0 means the file passes. Exit code 1 means a rule is broken, and the check prints each cause. A contrast warning means some text is hard to read in one place. Fix it by changing the colour.
+
+A token you leave out takes the value of the default theme, so a short file is a good file. Give both halves when you change the page colours.
+
+The full reference lists every token, every word and every rule: https://colliepwa.dev/docs/themes
+
+## Try it in Collie
+
+1. Open **Settings**, then **Appearance**. The **Theme** card is the first card.
+2. Tap **Import** and choose your file. Or tap **Paste**, paste the text of the file, and tap **Read**.
+3. Read the preview. It shows both halves, the shape, the terminal colours and a contrast report.
+4. Tap **Try** to wear the theme for a while, or **Apply** to keep it.
+
+Collie does not fetch a theme from a link. To use a theme from a link, open it, copy the text and paste it.
+
+## Share it
+
+1. Put your file at the root of a public GitHub repository, named `collie-theme.json`.
+2. In the **About** box of the repository page, add the topic `colliepwa-theme`.
+3. The site looks for tagged repositories once a day. It checks every theme file with the same check as the app, and it reads the name, the description and this README. A repository that passes shows up on https://colliepwa.dev/themes.
+
+One repository can hold several themes. Put each one in `themes/`, with its id in the name:
+
+```text
+themes/
+  my-day.collie-theme.json
+  my-night.collie-theme.json
+```
+
+The `author` field of a file is the credit the site shows.
+
+Replace this README with a short note about your own theme. Say what it looks like and who it is for.
+
+## Let an agent write it
+
+Tell your coding agent to run:
+
+```sh
+collie theme --skill
+```
+
+It prints the steps and every key a theme file may use. It also tells the agent to run `collie theme check` on the result.
+
+## Licence
+
+MIT. See `LICENSE`.
