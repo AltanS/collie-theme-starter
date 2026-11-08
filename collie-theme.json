@@ -1,8 +1,9 @@
 {
-  "version": 3,
+  "version": 4,
   "id": "orchard",
   "name": "Orchard",
   "author": "Altan Sarisin",
+  "character": "kawaii",
   "light": {
     "background": "oklch(0.965 0.016 85)",
     "foreground": "oklch(0.26 0.04 335)",

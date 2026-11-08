@@ -2,7 +2,7 @@
 
 A ready-made theme file for ColliePWA, to copy and change into your own.
 
-The file is `collie-theme.json`. It is a theme called Orchard. It has a light half and a dark half. It uses every part of a theme file: colours, two typefaces, the shape words, and a terminal palette. Edit the parts you want to change and delete the parts you do not.
+The file is `collie-theme.json`. It is a theme called Orchard. It has a light half and a dark half. It uses every part of a theme file: colours, two typefaces, the shape words, a terminal palette and a character. Edit the parts you want to change and delete the parts you do not.
 
 A theme changes how the app looks and nothing else. It holds colours and a few words. It cannot run code, load a file or reach a server.
 
@@ -10,7 +10,7 @@ A theme changes how the app looks and nothing else. It holds colours and a few w
 
 1. Click **Use this template** on GitHub, or clone this repository.
 2. Open `collie-theme.json`. Change `id`, `name` and `author` first. The `id` must be unique. It uses lower-case letters, digits and hyphens, and it may not be the id of a theme that Collie ships (`collie`, `nightwatch`, `daylight` or `harbour`).
-3. Change the colours in `light` and `dark`. Change the words in `surface`, and the typefaces in `fonts`.
+3. Change the colours in `light` and `dark`. Change the words in `surface`, the typefaces in `fonts`, and the `character`.
 4. Check the file:
 
    ```sh
@@ -23,9 +23,31 @@ A token you leave out takes the value of the default theme, so a short file is a
 
 The full reference lists every token, every word and every rule: https://colliepwa.dev/docs/themes
 
+## Pick a character
+
+A character is the dog in the header of the app. Its beads circle it, and they turn fast while an agent works. Orchard picks Kawaii:
+
+```json
+"character": "kawaii"
+```
+
+The key takes one of these words. Collie may add more later.
+
+| Word | Character |
+| --- | --- |
+| `collie` | Collie, the black and white dog. The default. |
+| `kawaii` | Kawaii, a round puppy with big eyes, face on. |
+| `kawaii-tilt` | Kawaii Tilt, the same puppy with its head tilted. |
+| `pixel` | Pixel, an 8-bit dog drawn in square cells. |
+
+- A file that sets `character` says `"version": 4`. Leave the key out and the header shows Collie.
+- A version 4 file needs a Collie newer than 1.28.0. An older Collie refuses the file and names the version.
+- Each phone can pick its own character in **Settings → Appearance → Character**. That choice wins over the theme, unless it is **From the theme**.
+- The app icon and the splash stay the Collie dog under every theme.
+
 ## Try it in Collie
 
-1. Open **Settings**, then **Appearance**. The **Theme** card is the first card.
+1. Open **Settings**, then **Appearance**. The **Theme** card is under the **Character** card.
 2. Tap **Import** and choose your file. Or tap **Paste**, paste the text of the file, and tap **Read**.
 3. Read the preview. It shows both halves, the shape, the terminal colours and a contrast report.
 4. Tap **Try** to wear the theme for a while, or **Apply** to keep it.
